@@ -1,7 +1,13 @@
 'use client'
 
 import { useTransition } from 'react'
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/shared/ui/card'
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/shared/ui/card'
 import { Button } from '@/shared/ui/button'
 
 interface ICourseItemProps {
@@ -27,7 +33,9 @@ export function CourseItem(props: ICourseItemProps) {
         <CardDescription>{course.description}</CardDescription>
       </CardHeader>
       <CardFooter>
-        <Button disabled={isLoadingDelete} onClick={handleDelete}>Удалить</Button>
+        <Button disabled={isLoadingDelete} onClick={handleDelete}>
+          Удалить
+        </Button>
       </CardFooter>
     </Card>
   )
