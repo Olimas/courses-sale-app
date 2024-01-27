@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import { signIn } from 'next-auth/react'
 
-import { useAppSession } from '@/entities/user/session.client'
+import { useAppSession } from '@/entities/user/session'
 import { FullPageSpinner } from '@/shared/ui/full-page-spinner'
 
 export default function AuthorizedGuard({ children }: React.PropsWithChildren) {
