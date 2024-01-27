@@ -15,7 +15,8 @@ export function useEmailSignIn() {
   })
 
   return {
-    isPending: emailSignInMutation.isPending,
     signIn: emailSignInMutation.mutate,
+    isPending: emailSignInMutation.isPending,
+    error: emailSignInMutation.error,
   }
 }
